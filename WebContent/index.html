@@ -3,8 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+ 
 </head>
 <body>
+	<a target="_blank" href="http://www.cnblogs.com/leoo2sk/archive/2011/06/27/write-javascript-with-seajs.html">docs</a>
 	
+	<script src="./arale/dist/seajs/1.1.0/sea.js" ></script>
+	<script type="text/javascript">
+
+        seajs.use('./js/index', function(hello) {
+        
+            console.log(hello.init());
+        
+          });
+	</script>
 </body>
 </html>
