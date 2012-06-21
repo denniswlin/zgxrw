@@ -1,0 +1,127 @@
+.context{width: 680px;margin: 0 auto;text-align: center;}
+#l {
+    font-size: 16px;
+    margin: 0 0 4px;
+    text-indent: 80px;
+    text-align: left;
+}
+.kw {
+    border:1px solid #000;
+    border-color:#9A9A9A #CDCDCD #CDCDCD #9A9A9A;
+    width:384px;
+    font:16px arial;
+    height:22px;
+    padding:4px 7px;
+    padding:6px 7px 2px\9;
+    padding-right:27px;
+    background:url("http://img.baidu.com/img/image/search_icon.png") no-repeat scroll 0 0 transparent;
+    margin-left:5px;
+    outline:none;
+}
+#l a, #l strong{
+    font-size:14px;
+}
+.search {
+    height: 60px;
+    text-align: left;   
+}
+.btn_wr {
+    background: url("http://img.baidu.com/img/image/search_icon.png") no-repeat scroll -202px bottom transparent;
+    display: inline-block;
+    height: 34px;
+    margin-left: 5px;
+    width: 97px;
+}
+.sb {
+    background: url("http://img.baidu.com/img/image/search_icon.png") repeat scroll 0 -35px #DDDDDD;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 14px;
+    height: 32px;
+    padding: 0;
+    width: 95px;
+}
+
+
+#wrapper {
+    margin: auto;
+    padding-top: 6px;
+    text-align: left;
+    width: 984px;
+}
+img, iframe {
+    border: medium none;
+}
+
+.nv {
+    height: 45px;
+    position: relative;
+    z-index: 298;
+}
+.nv .logo {
+    float: left;
+    margin-right: 20px;
+}
+.nv .tab {
+    float: left;
+    line-height: 18px;
+    padding: 20px 0 0;
+}
+.nv a, .nv strong, .sb {
+    font-size: 14px;
+}
+#head a:link {
+    color: #0000CC;
+}
+
+.i {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("http://www.baidu.com/img/i2.png") no-repeat scroll 0 0 transparent;
+    border-color: #7B7B7B #B6B6B6 #B6B6B6 #7B7B7B;
+    border-style: solid;
+    border-width: 1px;
+    font: 16px arial;
+    height: 32px;
+    padding: 3px 7px;
+    vertical-align: top;
+    width: 536px;
+}
+
+.sb {
+    background: url("http://www.baidu.com/img/i2.png") repeat scroll 0 -35px #DDDDDD;
+    border: 0 none;
+    cursor: pointer;
+    height: 32px;
+    margin-left: 3px;
+    padding: 0;
+    width: 95px;
+}
+
+#sugOut {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+}
+#sug {
+    -moz-user-select: none;
+    border: 1px solid #817F82;
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 28px;
+}
+#sugOff {
+    -moz-user-select: none;
+    background: none repeat scroll 0 0 #FBF2B0;
+    display: none;
+    height: 22px;
+    left: 0;
+    line-height: 22px;
+    position: absolute;
+}

@@ -3,11 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
- 
+    <link rel="stylesheet" href="./css/alice/base.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <style type="text/css">
+        
+    </style>
 </head>
 <body>
+    
+    <div class="context">
+        <div id="lg"><img src="http://img.baidu.com/img/image/ilogob.gif" width="270" height="129" alt="百度图片"></div>
+        <p id="l">
+            <a href="http://news.baidu.com/" onclick="return s(this);">新&nbsp;闻</a>　
+            <a href="http://www.baidu.com/?fr=img1000" onclick="return s(this);">网&nbsp;页</a>　
+            <a href="http://tieba.baidu.com/" onclick="return s(this);">贴&nbsp;吧</a>　
+            <a href="http://zhidao.baidu.com/" onclick="return s(this);">知&nbsp;道</a>　
+        </p>
+        <div id="sugOut">
+            <span id="sugIn"><input type="text" name="word" size="42" value="" maxlength="100" class="kw" id="kw" autocomplete="off"></span>
+            <span class="btn_wr"><input type="submit" value="百度一下" class="sb" onmousedown="this.className='sb sb_h'" onmouseout="this.className='sb'"></span>
+        </div>
+        <div class="info" style="margin: 30px 0px 10px 100px;">
+            <div align="left" class="d">热点目录：&nbsp;<a href="http://list.image.baidu.com/t/image_category/image_funny.html">爆笑趣图</a>&nbsp;<a href="http://list.image.baidu.com/t/image_category/image_recommend.html">精品推荐</a>&nbsp;<a href="http://list.image.baidu.com/t/image_category/image_women_stars1.html">美女明星</a>&nbsp;<a href="http://list.image.baidu.com/t/image_category/image_men_stars1.html">帅哥明星</a>&nbsp;<a href="http://list.image.baidu.com/t/image_category/image_wallpaper.html">精美壁纸</a>&nbsp;<a href="http://list.image.baidu.com/t/image_category/image_movie.html">电影电视</a>&nbsp;<a href="http://list.image.baidu.com/t/image_category/face_new.html">头像表情</a></div>
+        </div>
+    </div>
+    
+    <!-- 
     http://www.cnblogs.com/yuzhongwusan/archive/2011/11/17/2252207.html
     https://github.com/mockko/livereload
+    http://www.cnblogs.com/springside4/archive/2012/05/02/2481521.html
+	
+	-->
+	
 	<a target="_blank" href="http://www.cnblogs.com/leoo2sk/archive/2011/06/27/write-javascript-with-seajs.html">docs</a>
 	
 	<script src="./js/arale/seajs/1.1.0/sea.js"></script>

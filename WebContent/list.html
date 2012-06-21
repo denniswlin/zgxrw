@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <link rel="stylesheet" href="./css/alice/base.css" />
+    <link rel="stylesheet" href="./css/default.css" />
+    <style type="text/css">
+        body input {
+            -moz-box-sizing: border-box;
+        }
+        #sugOut {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1000;
+}
+    </style>
+</head>
+<body>
+	<div id="wrapper">
+	    <div id="head">
+	        <div class="nv">
+                  <a class="logo" href="/">
+                      <img width="117" height="38" alt="到百度图片首页" src="http://img.baidu.com/img/image/ilogos.gif">
+                  </a>
+                  <div class="tab">
+                      <a onclick="return s(this)" href="http://news.baidu.com/">新闻</a>&#12288;<a onmousedown="setPsUrl(this,1)" href="http://www.baidu.com/" onclick="return s(this)">网页</a>&#12288;<a href="http://tieba.baidu.com/" onclick="return s(this)">贴吧</a>&#12288;<a href="http://zhidao.baidu.com/" onclick="return s(this)">知道</a>&#12288;<a href="http://mp3.baidu.com/" onclick="return s(this)">MP3</a>&#12288;<strong>图片</strong>&#12288;<a class="top" href="http://video.baidu.com/" onclick="return s(this)">视频</a>&#12288;<a class="top" href="http://map.baidu.com/" onclick="return s(this)">地图</a>
+                  </div>
+              </div>
+              <div id="sugOut">
+                  <span id="sugIn">
+                    <input type="text" autocomplete="off" id="kw" class="i" maxlength="100" name="word">
+                  </span>
+                  <div id="sug"></div>
+                  <div id="sugOff"></div>
+                  <input type="submit" value="百度一下" class="sb">
+                  <span id="rta">
+                      <a target="_blank" onclick="p(event,2);" class="hp" href="http://www.baidu.com/search/image_help.html">帮助</a>
+                      <em>|</em>
+                      <a onclick="p(event,3);" href="/static/html/advanced.html">高级搜索</a>
+                  </span>
+              </div>
+              <div id="items">
+                  
+              </div>
+	    </div>
+	    
+	</div>
+</body>
+</html>
