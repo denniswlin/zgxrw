@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>用户登录--中关村在线</title>
+<meta name="author" content="he" />
+<meta name="keywords" content="用户登录" />
+<meta name="description" content="中关村在线用户登录" />
+<link href="http://service.zol.com.cn/user/version2011/css/Sigb.css" type="text/css" rel="stylesheet">
+<script>
+function ctlent(event){
+    var event = event?event:(window.event?window.event:null); 
+    if(event.keyCode==13){
+        onlogin();
+    }
+}
+function onlogin(){
+    var userid = document.getElementById("userid").value;
+    var pwd    = document.getElementById("pwd").value;
+    if(userid == '' || userid == '登录名'){
+        alert("请填写登录用户名");
+        document.getElementById("userid").focus();
+        return false;
+    }else if(pwd == '' || pwd == '登录密码'){
+        alert("请填写登录密码");
+        document.getElementById("pwd").focus();
+        return false;
+    }else{
+        document.log_form.submit();
+    }
+}
+function checkFocus(act_h) {
+    act_h.className += ' text_2';
+}
+
+function checkBlur(act_h) {
+    act_h.className = act_h.className.replace('text_2', '');
+}
+</script>
+</head>
+<body>
+<div class="div_body">
+  <div class="header"> <a href="http://www.zol.com.cn/" class="logo"></a> <span class="tit">大中华区最具商业价值的IT专业网站</span> </div>
+  <!--end header-->
+  <div class="main clearfix">
+    <div class="left"> </div>
+    <!--end left-->
+    <div class="right">
+      <div class="zc"> <a href="http://www.zol.com.cn/" class="retun">< 返回ZOL首页</a> <a href="http://service.zol.com.cn/user/register.php?backurl=http://www.zol.com.cn/"   class="zc_btn"></a> </div>
+      <!--end zc-->
+      <div class="login">
+        <form name="log_form" action='' method="post" target="_self" onsubmit="return onlogin();">
+        <input type="hidden" name="ACT" value='login'>
+        <input type="hidden" name="backUrl" value='http://www.zol.com.cn/'>
+        <ul class="dm_ul">
+          <li><span>登录名：</span>
+            <input type="text" name="userid" id="userid" class="text_1 " onfocus="checkFocus(this);" onblur="checkBlur(this);"/>
+          </li>
+          <li><span>密　码：</span>
+            <input type="password" name="pwd" id="pwd" class="text_1 " onfocus="checkFocus(this);"  onblur="checkBlur(this);"/>
+          </li>
+          <li class="zt">
+            <input type="checkbox" checked name="ch1"/>
+            记住登录状态
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="bbs_hide" value='1' title="悄悄地上线，别人看不到的"/>
+             <font color="gray">隐身登录</font>
+            </li>
+        </ul>
+        <div class="but_dl">
+          <input type="submit" value="" class="dl_bg"/>
+          <a href="http://service.zol.com.cn/user/get_pwd.php">忘记密码？</a> </div>
+        <!--end but_dl-->
+        <ul class="xz_ul">
+          <li>手机登录 <a href="http://3g.zol.com.cn/">http://3g.zol.com.cn</a></li>
+          <li>ZOL手机客户端<a href="http://www.zol.com.cn/help/iphone.html">下载地址</a> </li>
+        </ul>
+        </form>
+      </div>
+      <!--end login-->
+      <div class="login_2">
+        <dl>
+          <dt>用其他账号登录ZOL：</dt>
+          <dd class="clearfix">
+          <a href="http://service.zol.com.cn/user/api/sina/jump.php?backurl=http://www.zol.com.cn/" class="sina"><em></em>用新浪账号登录</a>
+          <a href="http://service.zol.com.cn/user/api/qq/libs/oauth/redirect_to_login.php?backurl=http://www.zol.com.cn/" class="qq"><em></em>用QQ账号登录</a>
+          <a href="http://service.zol.com.cn/user/api/renren/redirect_login.php?backurl=http://www.zol.com.cn/" class="renren"><em></em>用人人账号登录</a>
+          <a href="http://service.zol.com.cn/user/api/douban/login.php?backurl=http://www.zol.com.cn/" class="douban"><em></em>用豆瓣账号登录</a>
+          <a href="http://service.zol.com.cn/user/api/kaixin/login.php?backurl=http://www.zol.com.cn/" class="kaixin"><em></em>用开心账号登录</a>
+          <a href="http://service.zol.com.cn/user/api/baidu/jump.php?backurl=http://www.zol.com.cn/" class="baidu"><em></em>用百度账号登录</a>
+          </dd>
+        </dl>
+      </div>
+      <!--end login_2--> 
+    </div>
+    <!--end right--> 
+  </div>
+  <div id="wb_connect_btn"></div>
+  <!--end main-->
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=2342584648" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    WB2.anyWhere(function(W){
+    W.widget.connectButton({
+        id: "wb_connect_btn",
+        type: '3,2',
+        callback : {
+            login:function(o){
+                //alert(o.screen_name)
+                console.log(o);
+            },
+            logout:function(){
+                alert('logout');
+            }
+        }
+    });
+});
+
+    
+</script>
+  <script>document.getElementById('userid').focus();</script>
+  <div class="footnc">Copyright &copy; 1999 - 2012 ZOL. All rights reserved. 中关村在线 版权所有. <a href="http://www.miibeian.gov.cn/" class="hei12" target="_blank">京ICP证010391号</a></div>
+</div>
+<!--end div_body-->
+</body>
+</html>
