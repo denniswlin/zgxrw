@@ -24,16 +24,17 @@ var memberInfo = {
 	userDesc:'',
 	userSex:'',
 	userQq:'',
-	userMsn'',
+	userMsn:'',
 	// 第三方绑定时为非激活用户，只能使用第三方用户名和密码登陆，
 	// 激活时设置一个密码，以后就能直接使用此登陆
-	activate:''
+	activate:'',
+	Roles:''
 };
 var userBind = {
 	// 服务商
 	userID:'',
-	serviceName:''
-	serviceUID: '',
+	serviceName:'',
+	serviceUID: ''
 } 
 
 
