@@ -38,3 +38,4 @@ var userBind = {
 } 
 
 
+//http://www.cnblogs.com/cw_volcano/archive/2011/01/29/1947538.html
