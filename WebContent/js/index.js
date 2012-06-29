@@ -39,3 +39,4 @@ var userBind = {
 
 
 //http://www.cnblogs.com/cw_volcano/archive/2011/01/29/1947538.html
+//http://www.cnblogs.com/xj962091/articles/2494062.html
