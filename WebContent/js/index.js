@@ -30,12 +30,13 @@ var memberInfo = {
 	activate:'',
 	Roles:''
 };
+// 用户绑定的服务商
 var userBind = {
-	// 服务商
-	userID:'',
+	serviceUID: '',
 	serviceName:'',
-	serviceUID: ''
-} 
+	userID:'',
+	openID:''
+}
 
 
 //http://www.cnblogs.com/cw_volcano/archive/2011/01/29/1947538.html
